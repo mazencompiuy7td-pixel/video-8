@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ماما سامحاني؟ ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    font-family:'Cairo', sans-serif;
+    background: linear-gradient(120deg,#0f0c29,#302b63);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    text-align:center;
+    overflow:hidden;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius:20px;
+    padding:30px;
+    width:90%;
+    max-width:500px;
+    box-shadow: 0 0 25px rgba(126,246,200,0.2);
+    backdrop-filter: blur(4px);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
+h1 {
+    font-size:28px;
+    margin-bottom:15px;
+    text-shadow:
+      0 0 8px #ff4d6d,
+      0 0 20px #ff4d6d,
+      0 0 30px #7ef6c8;
+}
+
+p {
+    font-size:16px;
+    line-height:1.8;
+    text-align:right;
+}
+
+.wa-btn {
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 25px;
+    background: linear-gradient(90deg,#25D366,#128C7E);
+    color:white;
+    font-weight:700;
+    border-radius:12px;
+    text-decoration:none;
+    box-shadow: 0 0 15px rgba(37,211,102,0.6);
+    transition: transform 0.2s;
+}
+
+.wa-btn:hover {
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>ماما الحبيبة ❤️</h1>
+  <p>
+ماما… يا ست الحنية والأحلى في الدنيا كلها،<br>
+أنا غلطت ومعرفش أبدأ منين أشرحلك، بس جيت أكتبلك الرسالة دي عشان أطلب السماح.<br><br>
+
+أنا آسف على كل مرة زعلتك فيها، حتى لو كانت بسيطة…  
+وصدقيني، كل مرة بشوف ابتسامتك، بحس إن الدنيا كلها تمام، ولما تزعلِك أي حاجة، بحس كأني خسرت شوية من قلبي 😂❤️<br><br>
+
+إنتي مش بس أمي… إنتي صديقتي، مرشدي، وأحلى حد في حياتي.  
+أنا بوعدك من قلبي، مش هكرر أي حاجة تزعلِك، وهكون أحسن من النهاردة،  
+وهاخلي كل يوم أضحكك فيه أكتر وأكتر.<br><br>
+
+ولو سامحتيني دلوقتي… هتكوني مش بس ملكة قلبي،  
+ده كمان البطلة اللي أنقذت يومي من أي زعل!  
+وبعدين… مين غيرك يقدر يضحكني ويخليني أحب الحياة أكتر؟<br><br>
+
+سامحيني يا ماما، بحبك من قلبي ❤️
+  </p>
+
+  <a href="#" class="wa-btn" id="waBtn">أنا سامحتك 💚</a>
+</div>
+
+<script>
+const phone = "201111592379"; // الرقم بدون +
+const msg = encodeURIComponent(`ماما الحبيبة ❤️
+أنا غلطت ومعرفش أبدأ منين أشرحلك، بس جيت أكتبلك الرسالة دي عشان أطلب السماح.
+أنا آسف على كل مرة زعلتك فيها، حتى لو كانت بسيطة…
+إنتي مش بس أمي… إنتي صديقتي، مرشدي، وأحلى حد في حياتي.
+أنا بوعدك من قلبي، مش هكرر أي حاجة تزعلِك، وهكون أحسن من النهاردة،
+ولو سامحتيني دلوقتي… هتكوني مش بس ملكة قلبي، ده كمان البطلة اللي أنقذت يومي من أي زعل!
+بحبك من قلبي ❤️`);
+
+document.getElementById("waBtn").onclick = () => {
+    window.location.href = `https://wa.me/${phone}?text=${msg}`;
+};
+</script>
+
+</body>
+</html>
